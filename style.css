@@ -1,0 +1,166 @@
+/* 全域樣式設定 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Noto Serif TC', 'Playfair Display', serif;
+    color: #4A4A4A;
+    background-color: #5b6946;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 滿版封面區塊 */
+.hero {
+    position: relative;
+    height: 100vh;
+    /* 請在此處替換成妳的浪漫婚紗大圖網址 */
+    background: #faf3dd, url('./img/cover_img.png') no-repeat center center/cover;
+    background-color: #faf3dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+.hero-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+
+/* 通用內文區塊 */
+.section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #D4A373; /* 帶有質感的奶茶棕/金金色調 */
+    position: relative;
+    display: inline-block;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50%,
+    height: 1px;
+    background: #D4A373;
+    margin: 10px auto 0;
+}
+
+/* 故事/介紹區塊 */
+.story-p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* 照片牆區塊 */
+.gallery {
+    background-color: #F4EAE1; /* 溫暖的莫蘭迪粉粉色調 */
+    padding: 80px 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.grid-item {
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.grid-item img {
+    transition: transform 0.5s ease;
+}
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+/* 資訊/時間地點區塊 */
+.info-box {
+    background: #5b6946;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    margin-top: 20px;
+    color: white;
+}
+.info-item {
+    margin-bottom: 25px;
+}
+.info-item h3 {
+    font-size: 1.3rem;
+    color: #D4A373;
+    margin-bottom: 5px;
+}
+
+/* RSVP 表單區塊 */
+.rsvp-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    font-family: inherit;
+}
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #D4A373;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn-submit:hover {
+    background-color: #C39262;
+}
+
+/* 頁尾 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+/* 響應式微調 */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.5rem; }
+    .section { padding: 50px 20px; }
+}
