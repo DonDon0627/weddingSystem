@@ -124,9 +124,14 @@
         .form-group label {
             display: block;
             font-weight: bold;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             font-size: 1.2rem;
         }
+
+        .form-group input {
+            margin-bottom: 15px;
+        }
+
         .form-control {
             width: 95%;
             padding: 12px;

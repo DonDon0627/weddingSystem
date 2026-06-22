@@ -77,54 +77,75 @@
     <section class="section" style="background-color: #fffffd">
       <h2 class="section-title">Wen & Eason's Wedding</h2>
 
-      <form class="rsvp-form" action="#" method="POST">
+      <form
+        class="rsvp-form"
+        onsubmit="sent_redirect=true"
+        target="iframe_redirect"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPe7AafXK-7HsMBn7WnDSWH4WdkZUP_dq4gtrwKofrFxfx6Q/formResponse"
+        method="POST"
+      >
         <div class="form-group">
           <label for="name" class="form-question">姓名</label>
           <input
             type="text"
             id="name"
+            name="entry.2064555459"
             class="form-control"
             required
-            placeholder="請輸入姓名"
           />
-        </div>
-        <div class="form-group">
-          <label for="relationship">你是我們的...</label>
-          <input name="relationship" type="radio" value="family" />親人 <br />
-          <input name="relationship" type="radio" value="friend" />朋友 / 同事
-          <br />
-        </div>
-        <div class="form-group">
-          <label for="attend">會不會來參加我們的婚禮呢～</label>
-          <input name="attend" type="radio" value="yes" />我會去！10/3 當天見🩶
-          <br />
+
+          <label for="phone" class="form-question">手機號碼</label>
           <input
-            name="attend"
-            type="radio"
-            value="no"
-          />嗚嗚我當天有事無法出席😭
-          <br />
-        </div>
-        <div class="form-group">
-          <label for="count">參加人數(請填數字)</label>
-          <input
-            type="number"
-            id="count"
+            type="text"
+            id="phone"
             class="form-control"
-            min="1"
-            max="10"
-            value="1"
+            name="entry.1471833670"
+            required
           />
-        </div>
-        <div class="form-group">
-          <label for="diet">飲食習慣</label>
-          <input name="diet" type="radio" value="normal" />葷食 <br />
-          <input name="diet" type="radio" value="vegetarian" />全素 / 蛋奶素
+
+          <label for="relationship">與我們的關係是...</label>
+          <input name="entry.1732442341" type="radio" value="family" />家庭／家族成員
           <br />
-        </div>
-        <div class="form-group">
+          <input name="entry.1732442341" type="radio" value="friend" />朋友 / 同事
+          <br />
+          <input name="entry.1732442341" type="radio" value="others" />其他
+
+          <label for=attend-adults" class="form-question">請問當天出席的大人人數？（包含自己！）</label>
+          <input
+            type="text"
+            id="attend-numbers"
+            name="entry.2035658109"
+            class="form-control"
+            required
+          />
+
+          <label for=attend-kids" class="form-question">請問當天出席的小孩人數？</label>
+          <input
+            type="text"
+            id="attend-numbers"
+            name="entry.2006173139"
+            class="form-control"
+          />
+
+          <label for="kid-age">請問出席小孩的年齡區間</label>
+          <input name="entry.1254805171" type="radio" value="<3" />未滿3歲
+          <br />
+          <input name="entry.1254805171" type="radio" value="3~6" />3 ~ 6歲
+          <br />
+          <input name="entry.1254805171" type="radio" value=">6" />6歲以上
+
+          <label for="kid-chair">請問是否需要兒童座椅？</label>
+          <input name="entry.459596674" type="radio" value="family" />否
+          <label for="kid-chair-nums">是，數量為：</label>
+          <input name="entry.459596674" type="text">
+
+          <label for="diet">飲食習慣</label>
+          <input name="entry.363807250" type="radio" value="normal" />葷食
+          <br />
+          <input name="entry.363807250" type="radio" value="vegetarian" />全素 / 蛋奶素
+
           <label for="comment">備註/特殊需求/留言💬</label>
-          <input type="text" id="comment" class="form-control" />
+          <input type="text" id="comment" name="entry.1650259539" class="form-control" />
         </div>
         <button type="submit" class="btn-submit">送出回覆</button>
       </form>
