@@ -17,6 +17,13 @@
 
   </head>
   <body>
+
+    <!-- 轉場圖片 -->
+    <div class="splash-screen" id="splashScreen">
+        <video autoplay src="./img/openner.mp4" alt="開場圖">
+        <div class="hint-text"> </div>
+    </div>
+
     <!-- 1. 封面大圖 -->
     <section class="hero">
       <div class="hero-content">
@@ -111,7 +118,7 @@
           <label for="diet">飲食習慣</label>
           <input name="entry.363807250" type="radio" value="normal" />葷食
           <br />
-          <input name="entry.363807250" type="radio" value="vegetarian" />全素
+          <input name="entry.363807250" type="radio" value="vegetarian" />素食
 
           <label for="comment">備註/特殊需求/留言💬</label>
           <input type="text" id="comment" name="entry.1650259539" class="form-control" />
@@ -126,4 +133,23 @@
       <p>© 2026 Wen & Eason's wedding. All Rights Reserved.</p>
     </footer>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const splashScreen = document.getElementById("splashScreen");
+
+      splashScreen.addEventListener("click", () => {
+        // 加上 reveal class 觸發 CSS clip-path 動畫
+        splashScreen.classList.add("reveal");
+
+        // 等待 CSS transition 動畫結束 (1.2秒 = 1200毫秒) 後移除該節點
+        setTimeout(() => {
+          splashScreen.style.display = "none";
+          // 恢復身體的捲動功能（如果主要內容很長的話）
+          document.body.style.overflow = "auto";
+          document.html.style.overflow = "auto";
+        }, 1200);
+      });
+    });
+  </script>
 </html>

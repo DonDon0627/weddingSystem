@@ -179,4 +179,65 @@
             .hero-content h1 { font-size: 2.5rem; }
             .section { padding: 50px 20px; }
         }
+
+                /* 滿版遮罩層 */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 999;
+            cursor: pointer;
+            overflow: hidden;
+            background-color: #FAFAFA;
+            
+            /* 設為 Flex 容器 */
+            display: flex;
+            /* 水平置中 */
+            justify-content: center;
+            /* 垂直置中 */
+            align-items: center;
+
+            /* 核心動畫：針對 clip-path 做平滑轉場 */
+            clip-path: inset(0% 0% 0% 0%);
+            transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        .splash-screen img {
+            width: auto;
+            height: 100%;
+            object-fit: cover; /* 確保圖片滿版不變形 */
+        }
+
+        .splash-screen video {
+            width: auto;
+            height: 80%;
+            object-fit: cover; /* 確保圖片滿版不變形 */
+        }
+
+        /* 提示文字 */
+        .hint-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.5rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            pointer-events: none; /* 讓字體不干擾點擊事件 */
+            animation: blink 2s infinite;
+        }
+
+        /* 當被點擊後，觸發這個 Class */
+        .splash-screen.reveal {
+            clip-path: inset(0% 50% 0% 50%); /* 左右往中間縮 */
+            pointer-events: none; /* 動畫開始後不允許再次點擊 */
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
     </style>
