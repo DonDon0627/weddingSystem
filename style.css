@@ -44,8 +44,9 @@
         /* 通用內文區塊 */
         .section {
             padding: 80px 20px;
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
             text-align: center;
         }
         .section-title {
@@ -62,6 +63,15 @@
             height: 1px;
             background: #D4A373;
             margin: 10px auto 0;
+        }
+
+        .section img{
+            max-width: 100%;
+            width: auto;
+            height: 60%;
+            margin-left: auto;
+            margin-right: auto;
+
         }
 
         /* 故事/介紹區塊 */
