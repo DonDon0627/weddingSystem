@@ -10,122 +10,154 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant Garamond"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
     <!-- 轉場圖片 -->
-    <div class="splash-screen" id="splashScreen">
-        <video autoplay src="./img/openner.mp4" alt="開場圖">
-        <div class="hint-text"> </div>
+    <div class="video-intro" id="videoIntro">
+      <video id="introVideo" autoplay muted playsinline>
+        <source src="./img/openner.mp4" type="video/mp4" />
+      </video>
+      <div class="skip-hint">點擊任意地方進入...</div>
     </div>
 
-    <!-- 1. 封面大圖 -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Wen & Eason's Wedding</h1>
-      </div>
-    </section>
-
-    <!-- 2. 婚宴時間與地點 -->
-    <section class="section">
-      <h2 class="section-title">Wedding Info</h2>
-      <img src="./img/invitation_front.svg" alt="">
-      <!-- <div class="info-box">
-        <div class="info-item">
-          <h3>【 日期與時間 】</h3>
-          <p>2026 年 10 月 03 日 (星期六)</p>
-          <p>17:00 迎賓入場 / 17:30 雞尾酒時光 / 18:00 正式開席</p>
+    <div class="main-content" id="mainContent">
+      <!-- 1. 封面大圖 -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Wen & Eason's Wedding</h1>
         </div>
-        <div class="info-item">
-          <h3>【 宴客地點 】</h3>
-          <p>一嶼所在</p>
-          <p>3號島鹽埕港區</p>
-          <p>地址：高雄市鼓山區蓬萊路1之12號</p>
+      </section>
+
+      <!-- 2. 婚宴時間與地點 -->
+      <section class="section">
+        <h2 class="section-title">Wedding Info</h2>
+        <img src="./img/invitation_front.svg" alt="" />
+        <!-- <div class="info-box">
+            <div class="info-item">
+            <h3>【 日期與時間 】</h3>
+            <p>2026 年 10 月 03 日 (星期六)</p>
+            <p>17:00 迎賓入場 / 17:30 雞尾酒時光 / 18:00 正式開席</p>
+            </div>
+            <div class="info-item">
+            <h3>【 宴客地點 】</h3>
+            <p>一嶼所在</p>
+            <p>3號島鹽埕港區</p>
+            <p>地址：高雄市鼓山區蓬萊路1之12號</p>
+            </div>
+        </div> -->
+        <div class="commute">
+          <h2 class="section-title">交通資訊</h2>
+          <img
+            style="width: 40%; height: auto; padding-bottom: 50px"
+            src="./img/location.jpg"
+            alt=""
+          />
         </div>
-      </div> -->
-    </section>
+      </section>
 
-    <!-- 3. RSVP 出席意願調查 -->
-    <section class="section" style="background-color: #fffffd">
-      <h2 class="section-title">婚禮邀請函回覆表單</h2>
+      <!-- 3. RSVP 出席意願調查 -->
+      <section class="section" style="background-color: #fffffd">
+        <h2 class="section-title">婚禮邀請函回覆表單</h2>
 
-      <form
-        class="rsvp-form"
-        onsubmit="sent_redirect=true"
-        target="iframe_redirect"
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPe7AafXK-7HsMBn7WnDSWH4WdkZUP_dq4gtrwKofrFxfx6Q/formResponse"
-        method="POST"
-      >
-        <div class="form-group">
-          <label for="name" class="form-question">姓名</label>
-          <input
-            type="text"
-            id="name"
-            name="entry.2064555459"
-            class="form-control"
-            required
-          />
+        <form
+          class="rsvp-form"
+          onsubmit="sent_redirect=true"
+          target="iframe_redirect"
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPe7AafXK-7HsMBn7WnDSWH4WdkZUP_dq4gtrwKofrFxfx6Q/formResponse"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="name" class="form-question">姓名</label>
+            <input
+              type="text"
+              id="name"
+              name="entry.2064555459"
+              class="form-control"
+              required
+            />
 
-          <label for="phone" class="form-question">手機號碼</label>
-          <input
-            type="text"
-            id="phone"
-            class="form-control"
-            name="entry.1471833670"
-            required
-          />
+            <label for="phone" class="form-question">手機號碼</label>
+            <input
+              type="text"
+              id="phone"
+              class="form-control"
+              name="entry.1471833670"
+              required
+            />
 
-          <label for="relationship">與我們的關係是...</label>
-          <input name="entry.1732442341" type="radio" value="family" />家庭／家族成員
-          <br />
-          <input name="entry.1732442341" type="radio" value="friend" />朋友 / 同事
-          <br />
-          <input name="" type="radio" value="" />其他 <input name="entry.1732442341" type="text"/>
+            <label for="relationship">與我們的關係是...</label>
+            <input
+              name="entry.1732442341"
+              type="radio"
+              value="family"
+            />家庭／家族成員
+            <br />
+            <input name="entry.1732442341" type="radio" value="friend" />朋友 /
+            同事
+            <br />
+            <input name="" type="radio" value="" />其他
+            <input name="entry.1732442341" type="text" />
 
-          <label for=attend-adults" class="form-question">請問當天出席的大人人數？（包含自己！）</label>
-          <input
-            type="text"
-            id="attend-numbers"
-            name="entry.2035658109"
-            class="form-control"
-            required
-          />
+            <label for="attend-adults" class="form-question"
+              >請問當天出席的大人人數？（包含自己）</label
+            >
+            <input
+              type="text"
+              id="attend-adults"
+              name="entry.2035658109"
+              class="form-control"
+              required
+            />
 
-          <label for=attend-kids" class="form-question">請問當天出席的小孩人數？</label>
-          <input
-            type="text"
-            id="attend-numbers"
-            name="entry.2006173139"
-            class="form-control"
-          />
+            <label for="attend-kids" class="form-question"
+              >請問當天出席的小孩人數？</label
+            >
+            <input
+              type="text"
+              id="attend-kids"
+              name="entry.2006173139"
+              class="form-control"
+            />
 
-          <label for="kid-age">請問出席小孩的年齡區間</label>
-          <input name="entry.1254805171" type="radio" value="<3" />未滿3歲
-          <br />
-          <input name="entry.1254805171" type="radio" value="3~6" />3 ~ 6歲
-          <br />
-          <input name="entry.1254805171" type="radio" value=">6" />6歲以上
+            <label for="kid-age">請問出席小孩的年齡區間</label>
+            <input name="entry.1254805171" type="radio" value="<3" />未滿3歲
+            <br />
+            <input name="entry.1254805171" type="radio" value="3~6" />3 ~ 6歲
+            <br />
+            <input name="entry.1254805171" type="radio" value=">6" />6歲以上
 
-          <label for="kid-chair">請問是否需要兒童座椅？</label>
-          <input name="entry.459596674" type="radio" value="no" />否 <br />
-          <input name="" type="radio" value="" />是，數量為： <input name="entry.459596674" type="text">
+            <label for="kid-chair">請問是否需要兒童座椅？</label>
+            <input name="entry.459596674" type="radio" value="no" />否 <br />
+            <input name="" type="radio" value="" />是，數量為：
+            <input name="entry.459596674" type="text" />
 
-          <label for="diet">飲食習慣</label>
-          <input name="entry.363807250" type="radio" value="normal" />葷食
-          <br />
-          <input name="entry.363807250" type="radio" value="vegetarian" />素食
+            <label for="diet">飲食習慣</label>
+            <input name="entry.363807250" type="radio" value="normal" />葷食
+            <br />
+            <input name="entry.363807250" type="radio" value="vegetarian" />素食
 
-          <label for="comment">備註/特殊需求/留言💬</label>
-          <input type="text" id="comment" name="entry.1650259539" class="form-control" />
-        </div>
-        <button type="submit" class="btn-submit">點我送出表單</button>
-      </form>
-    </section>
+            <label for="comment">備註/特殊需求/留言💬</label>
+            <input
+              type="text"
+              id="comment"
+              name="entry.1650259539"
+              class="form-control"
+            />
+          </div>
+          <button type="submit" class="btn-submit">點我送出表單</button>
+        </form>
+      </section>
+    </div>
 
     <!-- 頁尾 -->
     <footer>
@@ -136,19 +168,49 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const splashScreen = document.getElementById("splashScreen");
+      const videoIntro = document.getElementById("videoIntro");
+      const introVideo = document.getElementById("introVideo");
+      const mainContent = document.getElementById("mainContent");
+      let isRemoved = false;
 
-      splashScreen.addEventListener("click", () => {
-        // 加上 reveal class 觸發 CSS clip-path 動畫
-        splashScreen.classList.add("reveal");
+      function removeIntro() {
+        if (isRemoved) return;
+        isRemoved = true;
 
-        // 等待 CSS transition 動畫結束 (1.2秒 = 1200毫秒) 後移除該節點
+        // 1. 影片層開始「淡出」
+        videoIntro.classList.add("fade-out");
+
+        // 2. 主要網頁內容同時開始「淡入」
+        mainContent.classList.add("fade-in");
+
+        // 3. 暫停影片
+        introVideo.pause();
+
+        // 4. 瞬間將網頁軸捲動到最頂端（在遮罩下進行）
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "auto",
+        });
+
+        // 5. 等待轉場完成後，解鎖網頁捲動軸
+        // 這裡設定 1500 毫秒 (1.5秒) 是為了完美搭配 CSS 裡 main-content 淡入的時間
         setTimeout(() => {
-          splashScreen.style.display = "none";
-          // 恢復身體的捲動功能（如果主要內容很長的話）
           document.body.style.overflow = "auto";
-          document.html.style.overflow = "auto";
-        }, 1200);
+          document.documentElement.style.overflow = "auto";
+        }, 1000);
+      }
+
+      // 點擊任意處跳過
+      videoIntro.addEventListener("click", () => {
+        removeIntro();
+      });
+
+      // 影片播放完畢後過 3 秒自動關閉
+      introVideo.addEventListener("ended", () => {
+        setTimeout(() => {
+          removeIntro();
+        }, 500);
       });
     });
   </script>
