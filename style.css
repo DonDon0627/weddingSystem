@@ -88,7 +88,7 @@ img {
 }
 .section-title {
   font-size: 2rem;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   /* color: #D4A373; 帶有質感的奶茶棕/金金色調 */
   color: #d7a761; /* 帶有質感的奶茶棕/金金色調 */
   position: relative;
@@ -112,7 +112,7 @@ img {
 }
 
 .commute {
-  padding: 80px 20px;
+  padding: 50px;
   background-color: #f6e4bd;
 }
 
