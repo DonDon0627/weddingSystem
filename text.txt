@@ -1,0 +1,13 @@
+https://docs.google.com/forms/d/e/1FAIpQLSfPe7AafXK-7HsMBn7WnDSWH4WdkZUP_dq4gtrwKofrFxfx6Q/viewform?usp=dialog
+action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPe7AafXK-7HsMBn7WnDSWH4WdkZUP_dq4gtrwKofrFxfx6Q/formResponse"
+
+<input type="hidden" name="entry.2064555459" value="name">
+<input type="hidden" name="entry.1471833670" value="phone">
+<input type="hidden" name="entry.1732442341" value="relationship">
+<input type="hidden" name="entry.2035658109" value="adult">
+<input type="hidden" name="entry.2006173139" value="kid">
+<input type="hidden" name="entry.1254805171" value="kid age">
+<input type="hidden" name="entry.459596674" value="chair">
+<input type="hidden" name="entry.363807250" value="diet">
+<input type="hidden" name="entry.1650259539" value="comment">
+<input type="hidden" name="dlut" value="1782143911942">
