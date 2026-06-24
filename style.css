@@ -79,7 +79,7 @@ img {
 
 /* 通用內文區塊 */
 .section {
-  padding: 80px 20px;
+  padding: 20px 20px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -112,7 +112,7 @@ img {
 }
 
 .commute {
-  padding: 50px;
+  padding: 30px 10px 10px 10px;
   background-color: #f6e4bd;
 }
 
