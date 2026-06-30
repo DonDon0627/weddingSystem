@@ -63,9 +63,11 @@ img {
   position: relative;
   height: 100vh;
   /* 請在此處替換成妳的浪漫婚紗大圖網址 */
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1920")
-      no-repeat center center/cover;
+      no-repeat center center/cover; */
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./img/test_2.jpeg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
