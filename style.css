@@ -28,7 +28,7 @@ img {
 .main-content {
   width: 100vw;
   height: 100vh;
-  /* display: flex; */
+  display: inline-block;
   justify-content: center;
   align-items: center;
   /* color: #fff; */
@@ -67,7 +67,7 @@ img {
     url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1920")
       no-repeat center center/cover; */
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("./img/test_2.jpeg") no-repeat center center/cover;
+    url("./img/laptop_pic.jpeg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,9 +75,16 @@ img {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("./img/phone_pic.jpeg") no-repeat center center/cover;
+  }
+}
+
 .hero-content h1 {
   font-size: 3.5rem;
-  font-weight: 300;
+  font-weight: bold;
   margin-bottom: 10px;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
@@ -123,6 +130,9 @@ img {
 .commute {
   padding: 30px 10px 50px 10px;
   background-color: #f6e4bd;
+  font-family: Zen Maru Gothic;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* 資訊/時間地點區塊 */
@@ -175,7 +185,7 @@ img {
 }
 .btn-submit {
   display: block;
-  width: 100%;
+  width: 95%;
   padding: 15px;
   background-color: #d4a373;
   color: #fff;
@@ -191,11 +201,13 @@ img {
 
 /* 頁尾 */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #f6e4bd;
+  color: #d7a761;
   text-align: center;
-  padding: 30px 20px;
+  margin-top: 30px;
+  padding: 10px;
   font-size: 0.9rem;
+  z-index: 999;
 }
 
 /* 響應式微調 */
@@ -205,6 +217,9 @@ footer {
   }
   .section {
     padding: 50px 20px;
+  }
+  footer {
+    margin-top: 60px;
   }
 }
 
