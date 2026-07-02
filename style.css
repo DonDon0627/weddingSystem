@@ -125,6 +125,7 @@ img {
   height: 60%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
 
 .commute {
@@ -150,6 +151,16 @@ img {
   font-size: 1.3rem;
   color: #d4a373;
   margin-bottom: 5px;
+}
+
+.map a {
+  text-align: center;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d4a373;
+  text-decoration: underline;
+  display: inline-flexbox;
 }
 
 /* RSVP 表單區塊 */
