@@ -181,12 +181,12 @@ addSeat(195, 5, 22);
 addSeat(170, 10, 23);
 addSeat(145, 20, 24);
 
-addSeat(120, 30, 25, "S");
-addSeat(95, 40, 26, "S");
-addSeat(70, 65, 27, "S");
-addSeat(50, 95, 28, "S");
+addSeat(120, 30, 25, "Startrust");
+addSeat(95, 40, 26, "Startrust");
+addSeat(70, 65, 27, "Startrust");
+addSeat(50, 95, 28, "Startrust");
 
-addSeat(35, 125, 29, "S");
+addSeat(35, 125, 29, "Startrust");
 addSeat(25, 150, 30);
 addSeat(20, 175, 31, "BEMS");
 addSeat(20, 202, 32, "BEMS");
@@ -203,11 +203,11 @@ addSeat(90, 230, 40, "BEMS");
 
 addSeat(90, 204, 41, "BEMS");
 addSeat(95, 180, 42, "BEMS");
-addSeat(105, 155, 43, "S");
+addSeat(105, 155, 43, "Startrust");
 
-addSeat(117, 132, 44, "S");
-addSeat(130, 110, 45, "S");
-addSeat(152, 93, 46, "S");
+addSeat(117, 132, 44, "Startrust");
+addSeat(130, 110, 45, "Startrust");
+addSeat(152, 93, 46, "Startrust");
 
 addSeat(174, 80, 47);
 addSeat(197, 73, 48);
@@ -355,12 +355,11 @@ searchInput.addEventListener("input", function () {
       clearSeatStatus();
       return;
     }
-
+    clearSeatStatus();
     result.innerHTML = matches
       .map((guest) => {
         //   console.log(guest.keywords);
         if (guest.zone) {
-          clearSeatStatus();
           updateSeatsByZone(guest.zone, "selected");
           return `
             <div class="seat-result">
@@ -369,7 +368,6 @@ searchInput.addEventListener("input", function () {
             </div>
         `;
         } else if (guest.seat) {
-          clearSeatStatus();
           updateSeatByNumber(guest.seat, "selected");
         }
         return `

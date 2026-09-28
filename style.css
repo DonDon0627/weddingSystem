@@ -105,6 +105,23 @@ img {
   object-position: center;
 }
 
+.carousel-inner-phone {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 10px;
+    visibility: hidden;
+  }
+  .carousel-indicators {
+    visibility: hidden;
+  }
+  .carousel-control {
+    visibility: hidden;
+  }
+}
+
 /* 通用內文區塊 */
 .section {
   padding: 20px 20px;
@@ -161,6 +178,24 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (max-width: 768px) {
+  .map-box {
+    visibility: hidden;
+  }
+  .seat-map {
+    display: block;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+}
+
+#result {
+  margin-top: 20px;
 }
 
 /* 座位（小正方形）的 CSS 樣式 */
