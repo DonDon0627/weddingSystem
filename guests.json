@@ -1,0 +1,695 @@
+[
+  {
+    "name": "楊文茜爸爸 楊宗城",
+    "displayName": "文茜爸爸",
+    "seat": 1
+  },
+  {
+    "name": "楊文茜叔叔 楊景雲",
+    "displayName": "文茜叔叔",
+    "seat": 2
+  },
+  {
+    "name": "楊文茜嬸嬸 阿嬸",
+    "displayName": "文茜嬸嬸",
+    "seat": 3
+  },
+  {
+    "name": "楊文茜哥哥 楊承峰",
+    "displayName": "文茜哥哥",
+    "seat": 65
+  },
+  {
+    "name": "楊文茜姊姊 楊婷湞 泰哥",
+    "displayName": "文茜姊姊",
+    "seat": 64
+  },
+  {
+    "name": "楊文茜姐夫 周義泰哥 楊婷湞",
+    "displayName": "文茜姊夫",
+    "seat": 63
+  },
+  {
+    "name": "高雄姑姑",
+    "displayName": "高雄姑姑",
+    "seat": 7
+  },
+  {
+    "name": "高雄姑姑",
+    "displayName": "高雄姑姑",
+    "seat": 8
+  },
+  {
+    "name": "高雄姑姑",
+    "displayName": "高雄姑姑",
+    "seat": 9
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 10
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 11
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 12
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 13
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 14
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 15
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 16
+  },
+  {
+    "name": "雅玲",
+    "displayName": "雅玲",
+    "seat": 17
+  },
+  {
+    "name": "巫珮瑩",
+    "displayName": "珮瑩",
+    "seat": 18
+  },
+  {
+    "name": "吳御瑄",
+    "displayName": "御瑄",
+    "seat": 19
+  },
+  {
+    "name": "張文鳳",
+    "displayName": "文鳳",
+    "seat": 47
+  },
+  {
+    "name": "李雯薪",
+    "displayName": "雯薪",
+    "seat": 20
+  },
+  {
+    "name": "李雯薪",
+    "displayName": "雯薪男友",
+    "seat": 21
+  },
+  {
+    "name": "黃盈語",
+    "displayName": "盈語",
+    "seat": 22
+  },
+  {
+    "name": "彭師 彭渰雯",
+    "displayName": "彭老師",
+    "seat": 23
+  },
+  {
+    "name": "大飛 陳昭穎",
+    "displayName": "大飛",
+    "seat": 24
+  },
+  {
+    "name": "信星 陳俊道哥 Dao",
+    "displayName": "Startrust",
+    "seat": 25,
+    "zone": "S"
+  },
+  {
+    "name": "信星 Jerry 廖宜瑨",
+    "displayName": "Startrust",
+    "seat": 26,
+    "zone": "S"
+  },
+  {
+    "name": "信星 Ian 林政霆",
+    "displayName": "Startrust",
+    "seat": 27,
+    "zone": "S"
+  },
+  {
+    "name": "信星 Ariel 林佩儀",
+    "displayName": "Startrust",
+    "seat": 28,
+    "zone": "S"
+  },
+  {
+    "name": "信星 Erin 吳佳蓁",
+    "displayName": "Startrust",
+    "seat": 29,
+    "zone": "S"
+  },
+  {
+    "name": "邱宗徽",
+    "displayName": "宗徽",
+    "seat": 31,
+    "zone": "BEMS"
+  },
+  {
+    "name": "邱宗徽",
+    "displayName": "宗徽女友",
+    "seat": 32,
+    "zone": "BEMS"
+  },
+  {
+    "name": "高群智 小智",
+    "displayName": "小智",
+    "seat": 33,
+    "zone": "BEMS"
+  },
+  {
+    "name": "高群智 小智",
+    "displayName": "小智女友",
+    "seat": 33,
+    "zone": "BEMS"
+  },
+  {
+    "name": "李奕頡",
+    "displayName": "奕頡",
+    "seat": 34,
+    "zone": "BEMS"
+  },
+  {
+    "name": "洪榆雯",
+    "displayName": "榆雯",
+    "seat": 35,
+    "zone": "BEMS"
+  },
+  {
+    "name": "洪榆雯",
+    "displayName": "榆雯先生",
+    "seat": 36,
+    "zone": "BEMS"
+  },
+  {
+    "name": "楊文茜弟弟 楊翔惟",
+    "displayName": "文茜弟弟",
+    "seat": 66
+  },
+  {
+    "name": "楊文茜姑姑",
+    "displayName": "文茜姑姑",
+    "seat": 4
+  },
+  {
+    "name": "大姑",
+    "displayName": "文茜大姑",
+    "seat": 5
+  },
+  {
+    "name": "大姑丈",
+    "displayName": "文茜大姑丈",
+    "seat": 6
+  },
+  {
+    "name": "三哥家",
+    "displayName": "文茜三哥家",
+    "seat": 62
+  },
+  {
+    "name": "三哥家",
+    "displayName": "三哥家",
+    "seat": 61
+  },
+  {
+    "name": "三哥家",
+    "displayName": "三哥家",
+    "seat": 60
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 59
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 58
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 57
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 56
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 55
+  },
+  {
+    "name": "小姑小叔",
+    "displayName": "小姑小叔",
+    "seat": 54
+  },
+  {
+    "name": "王信文",
+    "displayName": "王信文",
+    "seat": 53
+  },
+  {
+    "name": "王信文",
+    "displayName": "王信文",
+    "seat": 52
+  },
+  {
+    "name": "湯湯宜璇",
+    "displayName": "湯湯",
+    "seat": 51
+  },
+  {
+    "name": "湯湯宜璇",
+    "displayName": "湯湯",
+    "seat": 50
+  },
+  {
+    "name": "黃思瑀",
+    "displayName": "思瑀",
+    "seat": 49
+  },
+  {
+    "name": "黃思瑀",
+    "displayName": "思瑀",
+    "seat": 48
+  },
+  {
+    "name": "空桌",
+    "displayName": "",
+    "seat": 30
+  },
+  {
+    "name": "信星 Tammy 陳翊端",
+    "displayName": "Startrust",
+    "seat": 46,
+    "zone": "S"
+  },
+  {
+    "name": "信星 Samantha 柳",
+    "displayName": "Startrust",
+    "seat": 45,
+    "zone": "S"
+  },
+  {
+    "name": "信星 Claire 張心瑜",
+    "displayName": "Startrust",
+    "seat": 44,
+    "zone": "S"
+  },
+  {
+    "name": "信星 Nick 洪淇秦",
+    "displayName": "Startrust",
+    "seat": 43,
+    "zone": "S"
+  },
+  {
+    "name": "李奕頡",
+    "displayName": "奕頡(2)",
+    "seat": 42,
+    "zone": "BEMS"
+  },
+  {
+    "name": "林永鈞",
+    "displayName": "永鈞",
+    "seat": 41,
+    "zone": "BEMS"
+  },
+  {
+    "name": "何柏賢",
+    "displayName": "柏賢",
+    "seat": 40,
+    "zone": "BEMS"
+  },
+  {
+    "name": "何柏賢",
+    "displayName": "柏賢女友",
+    "seat": 39,
+    "zone": "BEMS"
+  },
+  {
+    "name": "徐賢益",
+    "displayName": "賢益",
+    "seat": 38,
+    "zone": "BEMS"
+  },
+  {
+    "name": "劉奕祈",
+    "displayName": "奕祈",
+    "seat": 37,
+    "zone": "BEMS"
+  },
+  {
+    "name": "陳宗和 陳奕勝爸爸",
+    "displayName": "奕勝爸爸",
+    "seat": 67
+  },
+  {
+    "name": "陳奕勝媽媽",
+    "displayName": "奕勝媽媽",
+    "seat": 68
+  },
+  {
+    "name": "大姑姑 陳曉眉",
+    "displayName": "奕勝大姑姑",
+    "seat": 69
+  },
+  {
+    "name": "小姑姑 陳曉薇",
+    "displayName": "奕勝小姑姑",
+    "seat": 70
+  },
+  {
+    "name": "小姑丈 李建智",
+    "displayName": "奕勝小姑丈",
+    "seat": 71
+  },
+  {
+    "name": "李佳玲",
+    "displayName": "李佳玲",
+    "seat": 72
+  },
+  {
+    "name": "林少傑 阿姨 吳素雅 林德祥",
+    "displayName": "少傑",
+    "seat": 73
+  },
+  {
+    "name": "姨丈 林德祥 阿姨 吳素雅 少傑",
+    "displayName": "奕勝姨丈",
+    "seat": 74
+  },
+  {
+    "name": "空桌",
+    "displayName": "",
+    "seat": 75
+  },
+  {
+    "name": "空桌",
+    "displayName": "空桌",
+    "seat": 76
+  },
+  {
+    "name": "黃宣豪",
+    "displayName": "黃宣豪女友",
+    "seat": 77
+  },
+  {
+    "name": "黃宣豪",
+    "displayName": "黃宣豪",
+    "seat": 78
+  },
+  {
+    "name": "張益齊 蛇 張董 五金行小開",
+    "displayName": "張益齊",
+    "seat": 79
+  },
+  {
+    "name": "姜鐙淯 Gay gay",
+    "displayName": "姜鐙淯",
+    "seat": 85
+  },
+  {
+    "name": "蔡溱 范景翔",
+    "displayName": "蔡溱/范景翔",
+    "seat": 83
+  },
+  {
+    "name": "蔡溱 范景翔",
+    "displayName": "蔡溱/范景翔",
+    "seat": 84
+  },
+  {
+    "name": "莊富涵",
+    "displayName": "莊富涵",
+    "seat": 82
+  },
+  {
+    "name": "沈佳穎",
+    "displayName": "沈佳穎",
+    "seat": 86
+  },
+  {
+    "name": "陳皇旗寶貝",
+    "displayName": "皇旗",
+    "seat": 115
+  },
+  {
+    "name": "盧家駿",
+    "displayName": "盧家駿",
+    "seat": 116
+  },
+  {
+    "name": "空桌",
+    "displayName": "",
+    "seat": 88
+  },
+  {
+    "name": "Xavier 陳志軒",
+    "displayName": "Xavier",
+    "seat": 89,
+    "zone": "KLA"
+  },
+  {
+    "name": "Hank 漢克 裝機第一人 唐翰平",
+    "displayName": "漢克",
+    "seat": 90,
+    "zone": "KLA"
+  },
+  {
+    "name": "Jeff 傑夫 卓育先 Upgrade第一人",
+    "displayName": "Upgrade第一人",
+    "seat": 91,
+    "zone": "KLA"
+  },
+  {
+    "name": "Fu tzu 福哥 林福梓",
+    "displayName": "福哥",
+    "seat": 92,
+    "zone": "KLA"
+  },
+  {
+    "name": "Pietro 鄭志浩 皮哥",
+    "displayName": "皮哥",
+    "seat": 93,
+    "zone": "KLA"
+  },
+  {
+    "name": "Jimmy 鄭傑文 吉米",
+    "displayName": "Jimmy",
+    "seat": 94,
+    "zone": "KLA"
+  },
+  {
+    "name": "麥老大 Malcolm 洪韻傑",
+    "displayName": "麥老大",
+    "seat": 95,
+    "zone": "KLA"
+  },
+  {
+    "name": "Stanely 史丹利 呂",
+    "displayName": "史丹利",
+    "seat": 96,
+    "zone": "KLA"
+  },
+  {
+    "name": "姆斯 James 黃仁範",
+    "displayName": "姆斯",
+    "seat": 97,
+    "zone": "KLA"
+  },
+  {
+    "name": "Ted 葉勁德",
+    "displayName": "Ted",
+    "seat": 98,
+    "zone": "KLA"
+  },
+  {
+    "name": "Chris 麥博翔",
+    "displayName": "Chris",
+    "seat": 99,
+    "zone": "KLA"
+  },
+  {
+    "name": "Jerry 傑瑞 官鼎洋",
+    "displayName": "傑瑞",
+    "seat": 100,
+    "zone": "KLA"
+  },
+  {
+    "name": "Jerry 傑瑞 官鼎洋",
+    "displayName": "傑瑞老婆",
+    "seat": 101,
+    "zone": "KLA"
+  },
+  {
+    "name": "Damon 戴蒙 邱正宇",
+    "displayName": "Damon",
+    "seat": 104
+  },
+  {
+    "name": "Damon 戴蒙 邱正宇",
+    "displayName": "Damon女友",
+    "seat": 105
+  },
+  {
+    "name": "阿公",
+    "displayName": "奕勝阿公",
+    "seat": 132
+  },
+  {
+    "name": "阿嬤",
+    "displayName": "奕勝阿嬤",
+    "seat": 131
+  },
+  {
+    "name": "陳奕勝哥哥",
+    "displayName": "奕勝哥哥",
+    "seat": 130
+  },
+  {
+    "name": "陳梓豪",
+    "displayName": "陳梓豪",
+    "seat": 129
+  },
+  {
+    "name": "李柏勳",
+    "displayName": "李柏勳",
+    "seat": 128
+  },
+  {
+    "name": "阿姨 吳素雅 林德祥 少傑",
+    "displayName": "奕勝阿姨",
+    "seat": 127
+  },
+  {
+    "name": "阿姨 吳素雅 林德祥 少傑",
+    "displayName": "阿姨朋友",
+    "seat": 126
+  },
+  {
+    "name": "空桌",
+    "displayName": "",
+    "seat": 125
+  },
+  {
+    "name": "蔡汶庭",
+    "displayName": "蔡汶庭",
+    "seat": 124
+  },
+  {
+    "name": "劉宜禎",
+    "displayName": "劉宜禎",
+    "seat": 123
+  },
+  {
+    "name": "連志宏 雞",
+    "displayName": "連志宏",
+    "seat": 122
+  },
+  {
+    "name": "連志宏 雞",
+    "displayName": "連志宏女友",
+    "seat": 121
+  },
+  {
+    "name": "王惠新 老人",
+    "displayName": "王惠新",
+    "seat": 81
+  },
+  {
+    "name": "羅嘉雪 陳郁翔",
+    "displayName": "羅嘉雪/陳郁翔",
+    "seat": 120
+  },
+  {
+    "name": "陳郁翔 羅嘉雪",
+    "displayName": "陳郁翔/羅嘉雪",
+    "seat": 119
+  },
+  {
+    "name": "林袀",
+    "displayName": "林袀/小游",
+    "seat": 118
+  },
+  {
+    "name": "林袀",
+    "displayName": "林袀/小游",
+    "seat": 117
+  },
+  {
+    "name": "邱冠維",
+    "displayName": "邱冠維",
+    "seat": 87
+  },
+  {
+    "name": "空桌",
+    "displayName": "",
+    "seat": 88
+  },
+  {
+    "name": "Ray 余承叡",
+    "displayName": "Ray",
+    "seat": 106,
+    "zone": "KLA"
+  },
+  {
+    "name": "Orson 徐世榮",
+    "displayName": "Orson",
+    "seat": 117,
+    "zone": "KLA"
+  },
+  {
+    "name": "David 蔡嘉軒",
+    "displayName": "David",
+    "seat": 108,
+    "zone": "KLA"
+  },
+  {
+    "name": "Jackey 蔣柏岳",
+    "displayName": "Jackey",
+    "seat": 109,
+    "zone": "KLA"
+  },
+  {
+    "name": "Steven 吳勇",
+    "displayName": "Setven",
+    "seat": 110,
+    "zone": "KLA"
+  },
+  {
+    "name": "Alex 洪緯",
+    "displayName": "Alex",
+    "seat": 111,
+    "zone": "KLA"
+  },
+  {
+    "name": "Jason 林義傑",
+    "displayName": "Jason",
+    "seat": 112,
+    "zone": "KLA"
+  },
+  {
+    "name": "Jason 林義傑",
+    "displayName": "Jason(2)",
+    "seat": 113,
+    "zone": "KLA"
+  }
+]
