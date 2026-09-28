@@ -20,6 +20,12 @@
       href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- 轉場圖片 -->
@@ -34,19 +40,159 @@
       <!-- 1. 封面大圖 -->
       <section class="hero">
         <div class="hero-content">
-          <h1>Wen & Eason's Wedding</h1>
+          <!-- <h1>Wen & Eason's Wedding</h1> -->
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/Wedding_pic/1.jpg"
+                class="carousel-collection"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/Wedding_pic/2.jpg"
+                class="carousel-collection"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/Wedding_pic/3.jpg"
+                class="carousel-collection"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="index">
+        <div class="container">
+          <div class="row g-4">
+            <!-- 交通資訊 -->
+            <div class="col-md-4">
+              <div class="info-card">
+                <img src="./img/icon/Commute.png" alt="" />
+                <h2>
+                  <a href="#commute-info" class="btn btn-outline-dark"
+                    >交通資訊</a
+                  >
+                </h2>
+                <p>Transportation</p>
+              </div>
+            </div>
+
+            <!-- 座位資訊 -->
+            <div class="col-md-4">
+              <div class="info-card">
+                <img src="./img/icon/Seat.png" alt="" />
+                <h2>
+                  <a href="#seat-map-info" class="btn btn-outline-dark"
+                    >座位資訊</a
+                  >
+                </h2>
+                <p>Seating Information</p>
+              </div>
+            </div>
+
+            <!-- 流程表 -->
+            <div class="col-md-4">
+              <div class="info-card">
+                <img src="./img/icon/Schedule.png" alt="" />
+                <h2>
+                  <a href="#wedding-info" class="btn btn-outline-dark"
+                    >流程表</a
+                  >
+                </h2>
+                <p>Wedding Schedule</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- 2. 婚宴時間與地點 -->
       <section class="section">
-        <h2 class="section-title">Wedding Info</h2>
+        <div class="seat-map">
+          <h2 class="section-title" id="seat-map-info">座位查詢</h2>
+          <div class="row g-4">
+            <!-- 左邊搜尋 -->
+            <div class="col-md-5 search-section">
+              <h3>請輸入您的姓名</h3>
+
+              <input
+                type="text"
+                id="searchInput"
+                class="form-control"
+                placeholder="輸入姓名..."
+              />
+
+              <div id="result">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- 右邊結果 -->
+            <div class="col-md-7">
+              <div id="map-container"></div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-title" id="wedding-info">Wedding Info</h2>
         <div style="margin-bottom: 50px">
           <img src="./img/invitation_front.svg" alt="" />
         </div>
 
         <div class="commute">
-          <h2 class="section-title">交通資訊</h2>
+          <h2 class="section-title" id="commute-info">交通資訊</h2>
 
           <a href="https://maps.app.goo.gl/QbKGJyKKukXjHjaq5" target="_blank">
             <img
@@ -66,161 +212,20 @@
         </div>
       </section>
 
-      <!-- 3. RSVP 出席意願調查 -->
-      <section
-        class="section"
-        style="
-          background-color: #fffffd;
-          font-family: Zen Maru Gothic;
-          font-weight: 400;
-          font-style: normal;
-        "
-      >
-        <h2 class="section-title">婚禮邀請函回覆表單</h2>
-
-        <form
-          class="rsvp-form"
-          onsubmit="sent_redirect=true"
-          target="iframe_redirect"
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPe7AafXK-7HsMBn7WnDSWH4WdkZUP_dq4gtrwKofrFxfx6Q/formResponse"
-          method="POST"
-        >
-          <div class="form-group">
-            <label for="name" class="form-question">姓名</label>
-            <input
-              type="text"
-              id="name"
-              name="entry.2064555459"
-              class="form-control"
-              required
-            />
-
-            <label for="phone" class="form-question">手機號碼</label>
-            <input
-              type="text"
-              id="phone"
-              class="form-control"
-              name="entry.1471833670"
-              required
-            />
-
-            <label for="relationship">與我們的關係是...</label>
-            <input name="entry.1732442341" type="radio" value="family" /> 家庭 /
-            家族成員
-            <br />
-            <input name="entry.1732442341" type="radio" value="friend" /> 朋友 /
-            同事
-            <br />
-            <input name="" type="radio" value="" /> 其他
-            <input name="entry.1732442341" type="text" />
-
-            <label for="attend-adults" class="form-question"
-              >當天出席的大人人數？（包含自己）</label
-            >
-            <input
-              type="text"
-              id="attend-adults"
-              name="entry.2035658109"
-              class="form-control"
-              required
-            />
-
-            <label for="attend-kids" class="form-question"
-              >當天出席的小孩人數？</label
-            >
-            <input
-              type="text"
-              id="attend-kids"
-              name="entry.2006173139"
-              class="form-control"
-            />
-
-            <label for="kid-age">請問出席小孩的年齡區間</label>
-            <input name="entry.1254805171" type="radio" value="<3" /> 未滿3歲
-            <br />
-            <input name="entry.1254805171" type="radio" value="3~6" /> 3 ~ 6歲
-            <br />
-            <input name="entry.1254805171" type="radio" value=">6" /> 6歲以上
-
-            <label for="kid-chair">是否需要兒童座椅？</label>
-            <input name="entry.459596674" type="radio" value="no" /> 否 <br />
-            <input name="" type="radio" value="" /> 是，數量為：
-            <input name="entry.459596674" type="text" />
-
-            <label for="diet">飲食習慣</label>
-            <input name="entry.363807250" type="radio" value="normal" /> 葷食
-            <br />
-            <input name="entry.363807250" type="radio" value="vegetarian" />
-            素食
-
-            <label for="comment">備註/特殊需求/留言💬</label>
-            <input
-              type="text"
-              id="comment"
-              name="entry.1650259539"
-              class="form-control"
-            />
-          </div>
-          <button type="submit" class="btn-submit">點我送出表單</button>
-        </form>
+      <!-- 頁尾 -->
+      <section>
+        <footer>
+          <p>Thank you for being a part of our lives.</p>
+          <p>© 2026 Wen & Eason's wedding.</p>
+        </footer>
       </section>
     </div>
-
-    <!-- 頁尾 -->
-    <section>
-      <footer>
-        <p>Thank you for being a part of our lives.</p>
-        <p>© 2026 Wen & Eason's wedding.</p>
-      </footer>
-    </section>
   </body>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const videoIntro = document.getElementById("videoIntro");
-      const introVideo = document.getElementById("introVideo");
-      const mainContent = document.getElementById("mainContent");
-      let isRemoved = false;
-
-      function removeIntro() {
-        if (isRemoved) return;
-        isRemoved = true;
-
-        // 1. 影片層開始「淡出」
-        videoIntro.classList.add("fade-out");
-
-        // 2. 主要網頁內容同時開始「淡入」
-        mainContent.classList.add("fade-in");
-
-        // 3. 暫停影片
-        introVideo.pause();
-
-        // 4. 瞬間將網頁軸捲動到最頂端（在遮罩下進行）
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "auto",
-        });
-
-        // 5. 等待轉場完成後，解鎖網頁捲動軸
-        // 這裡設定 1500 毫秒 (1.5秒) 是為了完美搭配 CSS 裡 main-content 淡入的時間
-        setTimeout(() => {
-          document.body.style.overflow = "auto";
-          document.documentElement.style.overflow = "auto";
-        }, 1000);
-      }
-
-      // 點擊任意處跳過
-      videoIntro.addEventListener("click", () => {
-        removeIntro();
-      });
-
-      // 影片播放完畢後過 3 秒自動關閉
-      introVideo.addEventListener("ended", () => {
-        setTimeout(() => {
-          removeIntro();
-        }, 500);
-      });
-    });
-  </script>
+  <script src="./script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"
+  ></script>
 </html>
