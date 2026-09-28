@@ -542,12 +542,14 @@
   {
     "name": "Damon 戴蒙 邱正宇",
     "displayName": "Damon",
-    "seat": 104
+    "seat": 104,
+    "zone": "KLA"
   },
   {
     "name": "Damon 戴蒙 邱正宇",
     "displayName": "Damon女友",
-    "seat": 105
+    "seat": 105,
+    "zone": "KLA"
   },
   {
     "name": "阿公",
