@@ -75,6 +75,10 @@ img {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url("./img/phone_pic.jpeg") no-repeat center center/cover;
   }
+  .hero {
+    visibility: hidden;
+    height: 10px;
+  }
 }
 
 .index {
@@ -180,9 +184,22 @@ img {
   background-position: center;
 }
 
+#fixed-map {
+  visibility: hidden;
+}
+
 @media (max-width: 768px) {
-  .map-box {
+  #map-container {
     visibility: hidden;
+  }
+
+  #fixed-map {
+    visibility: visible;
+    width: 300px;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
   .seat-map {
     display: block;
@@ -191,6 +208,13 @@ img {
     margin-right: auto;
     margin-top: 150px;
     margin-bottom: 50px;
+  }
+  .carousel-inner {
+    visibility: hidden;
+  }
+
+  .carousel-inner-phone {
+    visibility: hidden;
   }
 }
 
