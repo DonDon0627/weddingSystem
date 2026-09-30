@@ -81,10 +81,8 @@ img {
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url("./img/phone_pic.jpeg") no-repeat center center/cover;
-  }
-  .hero {
-    visibility: hidden;
-    height: 10px;
+    width: 100%;
+    height: 30vh;
   }
 }
 
@@ -101,8 +99,9 @@ img {
 .hero-content h1 {
   font-size: 3.5rem;
   font-weight: 500;
-  margin-bottom: 10px;
-  /* text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); */
+  margin-bottom: auto;
+  margin-top: 7vh;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 .hero-content p {
   font-size: 1.2rem;
@@ -209,12 +208,17 @@ img {
 
 @media (max-width: 768px) {
   #map-container {
-    visibility: hidden;
+    display: none !important;
+  }
+
+  .map-box {
+    display: none !important;
   }
 
   #fixed-map {
     visibility: visible;
-    display: inline-block;
+    display: block;
+    width: 100%;
   }
 
   #fixed-map img {
@@ -225,11 +229,12 @@ img {
 
   .seat-map {
     display: block;
+    width: 100% !important;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .carousel-inner {
     visibility: hidden;
