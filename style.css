@@ -68,7 +68,7 @@ img {
 /* 滿版封面區塊 */
 .hero {
   position: relative;
-  height: 60%;
+  height: 600px;
   width: 100%;
   display: inline-block;
   justify-content: center;
@@ -84,6 +84,9 @@ img {
     width: 100%;
     height: 30vh;
   }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
 }
 
 .index {
@@ -96,17 +99,30 @@ img {
   margin-right: auto;
 }
 
+.hero-content {
+  position: absolute; /* 浮動在 .hero 區塊上方 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 向上左位移達成完全置中 */
+  z-index: 10; /* 確保層級高於輪播圖片 */
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  pointer-events: none; /* 避免擋住下方的點擊/輪播事件 */
+  /* text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); */
+}
+
 .hero-content h1 {
   font-size: 3.5rem;
   font-weight: 500;
-  margin-bottom: auto;
-  margin-top: 7vh;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* 確保文字是白色 */
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* 加強字體陰影，讓文字在照片上更清晰 */
 }
-.hero-content p {
+/* .hero-content p {
   font-size: 1.2rem;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .carousel-inner img {
   width: 100%;
