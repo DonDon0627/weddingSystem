@@ -11,13 +11,19 @@
   font-style: normal;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* 防止手機端左右晃動/卡死 */
+}
+
 body {
   font-family: "Noto Serif TC", "Playfair Display", serif;
   color: #d7a761;
   background-color: #fafafa;
   line-height: 1.8;
   letter-spacing: 0.05em;
-  overflow: hidden; /* 轉場結束前禁止捲動 */
+  overflow: auto; /* 轉場結束前禁止捲動 */
 }
 img {
   max-width: 100%;
@@ -26,9 +32,10 @@ img {
 }
 
 .main-content {
-  width: 100vw;
-  height: 100vh;
-  display: inline-block;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: block;
   justify-content: center;
   align-items: center;
   /* color: #fff; */
@@ -195,6 +202,11 @@ img {
   visibility: hidden;
 }
 
+.remark {
+  font-size: 0.75rem;
+  color: #d7a761; /* 帶有質感的奶茶棕/金金色調 */
+}
+
 @media (max-width: 768px) {
   #map-container {
     visibility: hidden;
@@ -206,16 +218,17 @@ img {
   }
 
   #fixed-map img {
-    width: 600px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
   .seat-map {
     display: block;
-    height: 500px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 20px;
     margin-bottom: 50px;
   }
   .carousel-inner {

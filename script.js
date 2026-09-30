@@ -120,10 +120,7 @@ function addSeat(x, y, number = seatCounter, zone = "", status = "available") {
 
 // 按區域 (Zone) 批量更新該區所有座位的狀態
 function updateSeatsByZone(zoneName, newStatus) {
-  console.log("test_3");
-  console.log(zoneName);
   for (let seat of seatMap.values()) {
-    console.log(seat);
     if (seat.zone == zoneName) {
       seat.setStatus(newStatus); // 將該區所有座位都改為指定的狀態 (如 'selected')
     }
@@ -181,7 +178,7 @@ addSeat(195, 5, 22);
 addSeat(170, 10, 23);
 addSeat(145, 20, 24);
 
-addSeat(120, 30, 25, "Startrust");
+addSeat(120, 30, "25", "Startrust");
 addSeat(95, 40, 26, "Startrust");
 addSeat(70, 65, 27, "Startrust");
 addSeat(50, 95, 28, "Startrust");
@@ -341,6 +338,10 @@ const result = document.getElementById("result");
 searchInput.addEventListener("input", function () {
   const keyword = this.value.trim();
 
+  if (searchTimer) {
+    clearTimeout(searchTimer);
+  }
+
   if (keyword === "") {
     result.innerHTML = "";
     clearSeatStatus();
@@ -378,5 +379,5 @@ searchInput.addEventListener("input", function () {
         `;
       })
       .join("");
-  }, 1000);
+  }, 500);
 });
